@@ -20,9 +20,9 @@ public class PlayerInventory : MonoBehaviour
     // THIS class controls when the event is called, but other scripts decide 
     // what functions should run when it happens by "subscribing".
     // To Subscribe:
-    //     inventory.Changed += SomeFunction;
+    //     playerInv.Changed += SomeFunction;
     // To Unsubscribe:
-    //     inventory.Changed -= SomeFunction;
+    //     playerInv.Changed -= SomeFunction;
     // when we invoke Changed(), every subscribed function gets called immediately.
     public event Action Changed;
 
