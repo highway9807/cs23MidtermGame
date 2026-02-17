@@ -346,14 +346,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3528455933306664990, guid: 4e0d3cca7891b4cb3be0bf954bb67a7b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3528455933306664990, guid: 4e0d3cca7891b4cb3be0bf954bb67a7b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6820892189608563433, guid: 4e0d3cca7891b4cb3be0bf954bb67a7b, type: 3}
       propertyPath: m_Name
       value: Exit_Ice_Mine
