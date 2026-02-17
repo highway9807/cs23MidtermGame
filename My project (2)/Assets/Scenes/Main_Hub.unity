@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.8980392, g: 0.17807041, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -283,7 +283,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.8980392, g: 0.16334729, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -663,8 +663,8 @@ GameObject:
   - component: {fileID: 582509416}
   - component: {fileID: 582509415}
   - component: {fileID: 582509414}
-  m_Layer: 0
-  m_Name: Door_1 (2)
+  m_Layer: 3
+  m_Name: IceMine_1_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,7 +1083,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.8980392, g: 0.17095093, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1550,7 +1550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504815825}
   - component: {fileID: 1504815826}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door_Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1617,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.1822881, g: 0.8980392, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1704,7 +1704,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.8980392, g: 0.16288255, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1926,7 +1926,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.8980392, g: 0.18450609, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2148,7 +2148,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.114142045, g: 0.20204987, b: 0.8962264, a: 1}
+  m_Color: {r: 0.8980392, g: 0.16988063, b: 0.11372546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
