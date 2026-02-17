@@ -1,16 +1,25 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Doortoicemine1 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    GameObject player;
+
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player"); 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        // No need to update
+    }
+
+    void OnTriggerEnter2D (Collider2D other) 
+    {
+        if (other.gameObject.CompareTag("Player")) {
+            SceneManager.LoadScene("Ice_Mine_1");
+        }
     }
 }
