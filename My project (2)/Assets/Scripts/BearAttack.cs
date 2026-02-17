@@ -1,16 +1,16 @@
 /****************************************************************
 * 
-*  MineIce.cs
+*  BearAttack.cs
 *  Rui Zhu, Feb 17
 * 
-*  This script allows for an ice to by mined by a player on contact. 
-*  Used by Prefab "Ice".
+*  This script allows for a polar bear to harm a player on contact. 
+*  Used by Prefab "Polar_Bear".
 * 
 *****************************************************************/
 
 using UnityEngine;
 
-public class MineIce : MonoBehaviour
+public class BearAttack : MonoBehaviour
 {
     GameObject player;
 
@@ -25,11 +25,10 @@ public class MineIce : MonoBehaviour
         // No need to update
     }
 
-    void OnCollisionEnter2D (Collision2D other) 
+    void OnTriggerEnter2D (Collider2D other) 
     {
         if (other.gameObject.CompareTag("Player")) {
-            Destroy(gameObject);
-            Debug.Log(">>> Ice: I have been mined :3"); // Replace this line with cmd to update inventory in Game Handler
+            Debug.Log(">>> Bear: Gawr >:3"); // Replace this line with actual bear interactions
         }
     }
 }
