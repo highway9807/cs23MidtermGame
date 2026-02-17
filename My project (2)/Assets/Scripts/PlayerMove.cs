@@ -4,7 +4,7 @@
 *  Rui Zhu, Feb 17
 * 
 *  This script allows for using WASD and arrow keys to control a player's 
-*  movement. Used by GameObj "Player" in scene Ice_Mine_1.
+*  movement in an Ice Mine. Used by Prefab "Player".
 * 
 *****************************************************************/
 
@@ -31,6 +31,6 @@ public class PlayerMove : MonoBehaviour
     // FixedUpdate() runs every 20 ms, used for physics movement
     void FixedUpdate()
     {
-        rb.velocity = movement * speed;
+        rb.linearVelocity = movement * speed;
     }
 }
