@@ -190,6 +190,7 @@ public class PlayerInventory : MonoBehaviour
                     slots.RemoveAt(i);
                 }
             }
+            
             NotifyChanged();
             return true;
         }

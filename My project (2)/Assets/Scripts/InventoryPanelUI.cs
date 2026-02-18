@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class InventoryPanelUI : MonoBehaviour
 {
     [Header("Wiring")]
-    [SerializeField] private Transform gridParent;
+
+    // The object that has GridLayoutGroup
+    [SerializeField] private Transform gridParent;        
     // prefab for ONE item box
     [SerializeField] private InventorySlotUI slotPrefab; 
 
