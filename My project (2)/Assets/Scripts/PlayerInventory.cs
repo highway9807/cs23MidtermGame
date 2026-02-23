@@ -46,7 +46,9 @@ public class PlayerInventory : MonoBehaviour
         for (int i = 0; i < slotCount; i++)
         {
             ItemSlot s = slots[i];
-            if ((s.item == item) && s.quantity < item.maxStack)
+            bool partialCond = (s.item == item) && 
+                               (item.maxStack <= 0 || s.quantity < item.maxStack);
+            if (partialCond)
             {
                 return s;
             }
@@ -79,12 +81,16 @@ public class PlayerInventory : MonoBehaviour
     // signify if we can add an item. helper function for tryAdd
     public bool CanAdd(ItemDefinition item, int amt)
     {
-        if ((item == null) || (amt < 0)) return false;
+        if ((item == null) || (amt <= 0)) return false;
+        
+        int maxStk = item.maxStack;
+        int maxCopy = item.maxCopies;
 
-        // is maxcopies <=0, treat as infinite
-        if (item.maxCopies <= 0) return true;
+        // if maxstack <= 0 or maxCopies <= 0 --> treat as infinite
+        if (maxStk <= 0 || maxCopy <= 0) return true;
         int currItemsInInv = GetTotalItems(item);
-        return (currItemsInInv + amt) <= (item.maxCopies * item.maxStack); // TODO: make sure this is right (testing)
+        // here, max vars are non-zero.
+        return (currItemsInInv + amt) <= (maxStk * maxCopy); 
     }
 
     public bool TryAdd(ItemDefinition item, int amt)
@@ -113,22 +119,26 @@ public class PlayerInventory : MonoBehaviour
             while (itemsToStack > 0)
             {
                 ItemSlot partial = FindPartialStack(item);
+                // case 1: partial slot exists, fill it
                 if (partial != null)
-                {   
-                    // fill the partial slot
-                    int spaceLeft = itemMaxStack - partial.quantity;
+                {
+                    // for itemMaxStack = 0, there is always enough room left
+                    int spaceLeft = (itemMaxStack != 0) ? (itemMaxStack - partial.quantity) : itemsToStack;
                     int numToStack = Math.Min(spaceLeft, itemsToStack);
                     partial.quantity += numToStack;
+
+                    // decrease toStack by the # of items we store
                     itemsToStack -= numToStack;
                 } 
                 else
                 {
+                    
                     // no partial slot, create a new one
                     ItemSlot newSlot = new ItemSlot();
                     newSlot.item = item;
 
                     // stack as many items as we can into this new slot
-                    int numToStack = Math.Min(itemsToStack, itemMaxStack);
+                    int numToStack = (itemMaxStack != 0) ? Math.Min(itemsToStack, itemMaxStack): itemsToStack;
                     newSlot.quantity = numToStack;
                     
                     // add the new slot to our list
@@ -145,7 +155,7 @@ public class PlayerInventory : MonoBehaviour
 
     public bool TryRemove(ItemDefinition item, int amt)
     {   
-        if ((item == null) || (amt <=0 )) return false;
+        if ((item == null) || (amt <= 0 )) return false;
         int have = GetTotalItems(item);
 
         // we can't remove more items than we have
@@ -188,6 +198,8 @@ public class PlayerInventory : MonoBehaviour
                 if (s.quantity <= 0)
                 {
                     slots.RemoveAt(i);
+                    // debug
+                    if (s.quantity < 0) Debug.Log("PlayerInventory() -> TryRemove(): You've removed more items than you have!");
                 }
             }
             
