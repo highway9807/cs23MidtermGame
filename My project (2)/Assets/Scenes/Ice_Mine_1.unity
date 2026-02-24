@@ -1312,6 +1312,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5562500885576247742, guid: a71de2139d90e42388c4c359a97b47f8, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 5562500885576247742, guid: a71de2139d90e42388c4c359a97b47f8, type: 3}
+      propertyPath: m_Color.r
+      value: 0.28235295
+      objectReference: {fileID: 0}
     - target: {fileID: 6643243277147065393, guid: a71de2139d90e42388c4c359a97b47f8, type: 3}
       propertyPath: m_Name
       value: InventoryRoot
@@ -1395,6 +1403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIController
       objectReference: {fileID: 0}
+    - target: {fileID: 7015321148784502403, guid: 1901d64bccf514c22acd70abd631129d, type: 3}
+      propertyPath: inventoryRoot
+      value: 
+      objectReference: {fileID: 2121598903}
     - target: {fileID: 8394360499922535549, guid: 1901d64bccf514c22acd70abd631129d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1489,6 +1501,11 @@ RectTransform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 734369539380687916, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
   m_PrefabInstance: {fileID: 1511919077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2121598903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6643243277147065393, guid: a71de2139d90e42388c4c359a97b47f8, type: 3}
+  m_PrefabInstance: {fileID: 1983464569}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2125836362
 PrefabInstance:
