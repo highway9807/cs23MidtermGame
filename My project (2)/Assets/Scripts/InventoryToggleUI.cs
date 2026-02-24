@@ -10,12 +10,24 @@ public class InventoryToggleUI : MonoBehaviour
     [Header("Startup")]
     [SerializeField] private bool startClosed = true;
 
+    [Header("Pause Behavior")]
+    [SerializeField] private bool pauseGameplayWhenOpen = true;
+
+    // the reason we would pause from this file (always inventory pause)
+    private const PauseReason InvPause = PauseReason.Inventory;
+
     // Start runs once when the object first becomes active.
     private void Start()
     {
-        if (inventoryRoot != null)
+        if (inventoryRoot != null && startClosed)
         {
             inventoryRoot.SetActive(!startClosed);
+        }
+
+        // in case there was some gameplay pause, then this avoids us getting "stuck"
+        if (pauseGameplayWhenOpen)
+        {
+            PauseManager.ReleasePause(InvPause);
         }
     }
 
@@ -27,6 +39,21 @@ public class InventoryToggleUI : MonoBehaviour
         {
             bool isOpen = inventoryRoot.activeSelf;
             inventoryRoot.SetActive(!isOpen);
+            if (pauseGameplayWhenOpen)
+            {
+                if (!isOpen) PauseManager.RequestPause(InvPause);
+                else PauseManager.ReleasePause(InvPause);
+            }
+        }
+    }
+
+    private void OnDestroy()
+    {
+        // if theres some scene change or something else happens, do NOT leave
+        // the game pasued
+        if (pauseGameplayWhenOpen)
+        {
+            PauseManager.ReleasePause(InvPause);
         }
     }
 }
