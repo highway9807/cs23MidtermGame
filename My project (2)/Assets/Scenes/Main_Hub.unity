@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8980392, g: 0.17807041, b: 0.11372546, a: 1}
+  m_Color: {r: 0.11764706, g: 0.68235296, b: 0.03529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1132,9 +1132,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1125399197}
   - component: {fileID: 1125399196}
+  - component: {fileID: 1125399198}
   - component: {fileID: 1125399195}
   m_Layer: 0
-  m_Name: Door_1 (5)
+  m_Name: Furnace_room_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1170,7 +1171,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1257,6 +1258,18 @@ Transform:
   - {fileID: 122711614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.468}
+--- !u!114 &1125399198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125399194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f594d21823c4df28b759bca29880db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1299140523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1618,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.1822881, g: 0.8980392, b: 0.11372546, a: 1}
+  m_Color: {r: 0.11719179, g: 0.6792453, b: 0.03524386, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
