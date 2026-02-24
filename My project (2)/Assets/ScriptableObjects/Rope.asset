@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 2
   itemName: Rope
   itemSprite: {fileID: 8662384261516989540, guid: 35978a99a524a4b588296e4392891acb, type: 3}
-  maxStack: 999
-  maxCopies: 999
+  maxStack: 0
+  maxCopies: 1

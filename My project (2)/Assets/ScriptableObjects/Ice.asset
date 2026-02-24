@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 0
   itemName: Ice
   itemSprite: {fileID: -7560284153744367771, guid: 28fa31eabf29a44e7800e0f6e1bd67eb, type: 3}
-  maxStack: 0
+  maxStack: 1
   maxCopies: 0
