@@ -78,6 +78,11 @@ public class PlayerInventory : MonoBehaviour
         return itemTotal;
     }
 
+    public void ClearAll()
+    {
+        slots.Clear();
+    }
+
     // signify if we can add an item. helper function for tryAdd
     public bool CanAdd(ItemDefinition item, int amt)
     {
@@ -216,4 +221,6 @@ public class PlayerInventory : MonoBehaviour
         if (Changed != null)
             Changed();
     }
+
+
 }
