@@ -14,7 +14,8 @@ public class ItemDefinition : ScriptableObject
     public Sprite itemSprite;
 
     [Header("Stacking")]
+    [Tooltip("Max of this item per stack (per slot). 0 = unlimited per slot.")]
     public int maxStack;
-    // potentially use -1 as a "no limit" value
+    [Tooltip("Max number of stacks (slots) of this item allowed. 0 = unlimited stacks.")]
     public int maxCopies;
 }

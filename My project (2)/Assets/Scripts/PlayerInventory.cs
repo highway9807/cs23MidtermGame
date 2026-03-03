@@ -78,24 +78,49 @@ public class PlayerInventory : MonoBehaviour
         return itemTotal;
     }
 
+    // returns how many slots currently hold this item (number of stacks)
+    private int GetSlotCountForItem(ItemDefinition item)
+    {
+        if (item == null) return 0;
+        int count = 0;
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].item == item) count++;
+        }
+        return count;
+    }
+
     public void ClearAll()
     {
         slots.Clear();
     }
 
     // signify if we can add an item. helper function for tryAdd
+    // Semantics: maxStack = max per stack (per slot); maxCopies = max number of stacks (slots) of this item.
     public bool CanAdd(ItemDefinition item, int amt)
     {
         if ((item == null) || (amt <= 0)) return false;
-        
+
         int maxStk = item.maxStack;
         int maxCopy = item.maxCopies;
+        int slotCount = GetSlotCountForItem(item);
 
-        // if maxstack <= 0 or maxCopies <= 0 --> treat as infinite
-        if (maxStk <= 0 || maxCopy <= 0) return true;
-        int currItemsInInv = GetTotalItems(item);
-        // here, max vars are non-zero.
-        return (currItemsInInv + amt) <= (maxStk * maxCopy); 
+        // Unlimited per stack (maxStack <= 0): any amount fits in existing slot(s) or we can create a slot if under maxCopies.
+        if (maxStk <= 0) return true;
+
+        // Unlimited number of stacks (maxCopies <= 0): room in existing + we can create as many new slots as needed.
+        if (maxCopy <= 0) return true;
+
+        // Both limited: room = room in existing slots + room from new slots we're allowed to add.
+        int roomInExisting = 0;
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].item == item)
+                roomInExisting += Math.Max(0, maxStk - slots[i].quantity);
+        }
+        int newSlotsAvailable = Math.Max(0, maxCopy - slotCount);
+        int totalRoom = roomInExisting + newSlotsAvailable * maxStk;
+        return amt <= totalRoom;
     }
 
     public bool TryAdd(ItemDefinition item, int amt)
@@ -104,10 +129,14 @@ public class PlayerInventory : MonoBehaviour
 
         int itemMaxStack = item.maxStack;
 
-        // case 1: unstackable items
+        // case 1: unstackable items (one per slot)
         if (itemMaxStack == 1)
         {
-            for (int i = 0; i < amt; i++)
+            int slotCount = GetSlotCountForItem(item);
+            int maxCopy = item.maxCopies;
+            int canAdd = (maxCopy <= 0) ? amt : Math.Min(amt, maxCopy - slotCount);
+            if (canAdd <= 0) return false;
+            for (int i = 0; i < canAdd; i++)
             {
                 ItemSlot s = new ItemSlot();
                 s.item = item;
@@ -115,7 +144,7 @@ public class PlayerInventory : MonoBehaviour
                 slots.Add(s);
             }
             NotifyChanged();
-            return true;
+            return canAdd == amt;
         }
         // case 2: stackable items
         else
@@ -137,16 +166,18 @@ public class PlayerInventory : MonoBehaviour
                 } 
                 else
                 {
-                    
-                    // no partial slot, create a new one
+                    // no partial slot — can we create a new stack? (maxCopies = max number of stacks)
+                    int maxCopy = item.maxCopies;
+                    if (maxCopy > 0 && GetSlotCountForItem(item) >= maxCopy)
+                        return false; // at stack limit, no room in existing stacks
+
                     ItemSlot newSlot = new ItemSlot();
                     newSlot.item = item;
 
                     // stack as many items as we can into this new slot
                     int numToStack = (itemMaxStack != 0) ? Math.Min(itemsToStack, itemMaxStack): itemsToStack;
                     newSlot.quantity = numToStack;
-                    
-                    // add the new slot to our list
+
                     slots.Add(newSlot);
                     itemsToStack -= numToStack;
                 }
