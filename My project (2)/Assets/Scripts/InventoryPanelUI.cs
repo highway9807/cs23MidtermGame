@@ -5,14 +5,23 @@ public class InventoryPanelUI : MonoBehaviour
     [Header("Wiring")]
 
     // The object that has GridLayoutGroup
-    [SerializeField] private Transform gridParent;        
+    [SerializeField] private Transform gridParent;
     // prefab for ONE item box
-    [SerializeField] private InventorySlotUI slotPrefab; 
+    [SerializeField] private InventorySlotUI slotPrefab;
 
     private PlayerInventory playerInv;
 
     private void OnEnable()
     {
+        // Keep inventory panel centered: pivot at center so the panel center (not top-left) is on screen center.
+        if (gridParent != null && gridParent is RectTransform rt)
+        {
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.anchoredPosition = Vector2.zero;
+        }
+
         // Grab playerInv from GameState singleton.
         // GameState should already exist in the scene, and it persists across scene loads.
         if (GameState.gs != null)
