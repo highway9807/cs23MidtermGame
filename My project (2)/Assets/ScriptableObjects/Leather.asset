@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf9f2305e1c54b5e917e47c8945de9d, type: 3}
   m_Name: Leather
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: 
-  itemSprite: {fileID: 0}
+  id: 3
+  itemName: Leather
+  itemSprite: {fileID: 21300000, guid: 6f7482b5fbe8940cab09e102785771d6, type: 3}
   maxStack: 0
-  maxCopies: 0
+  maxCopies: 1

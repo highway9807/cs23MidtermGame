@@ -468,8 +468,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4861d58509594446bad66dbf0422464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testItemA: {fileID: 11400000, guid: ae80b9d65df7b4ea7b777944c90fc1f0, type: 2}
-  testItemB: {fileID: 11400000, guid: 6d07140ceb2bc4cea871244ae1ba7800, type: 2}
+  items:
+  - {fileID: 11400000, guid: 08d7e5ee0ce9649a8b3929c853a377b1, type: 2}
+  - {fileID: 11400000, guid: 0b7bb7439a36a45a485c05258943e5fc, type: 2}
+  - {fileID: 11400000, guid: 618dee17088664e5d9eb58b0639ff1ea, type: 2}
+  - {fileID: 11400000, guid: ae80b9d65df7b4ea7b777944c90fc1f0, type: 2}
+  - {fileID: 11400000, guid: 85689077ff7d44bafacbc5308da7e7ba, type: 2}
+  - {fileID: 11400000, guid: 88545d2146f06413593f0888b1ef46fd, type: 2}
+  - {fileID: 11400000, guid: 6d07140ceb2bc4cea871244ae1ba7800, type: 2}
+  - {fileID: 0}
   addItemKey: 107
   removeItemKey: 108
 --- !u!4 &449263909

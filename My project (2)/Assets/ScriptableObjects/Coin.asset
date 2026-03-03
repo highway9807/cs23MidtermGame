@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   itemName: Coin
-  itemSprite: {fileID: 0}
-  maxStack: 1
-  maxCopies: 0
+  itemSprite: {fileID: 21300000, guid: 6bc1f9d971cdc4c5b99cf7ba5f5a33cc, type: 3}
+  maxStack: 0
+  maxCopies: 1
