@@ -14,11 +14,13 @@ public class BearMove : MonoBehaviour
 
     void Start()
     {
-        startPosition = transform.position;
-        amplitude = Random.Range(1f, 1.5f);
-        frequency = Random.Range(5f, 8f); 
-        int randomAxis = Random.Range(0, 2);
-        if (randomAxis == 1) axis = 'y';
+        if (move) {
+            startPosition = transform.position;
+            amplitude = Random.Range(1f, 1.5f);
+            frequency = Random.Range(5f, 8f); 
+            int randomAxis = Random.Range(0, 2);
+            if (randomAxis == 1) axis = 'y';
+        }
     }
 
     void Update()

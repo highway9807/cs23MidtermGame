@@ -261,6 +261,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1012961844}
     m_Modifications:
+    - target: {fileID: -9081483075065129693, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
+      propertyPath: wander
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1062773842467529188, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
       propertyPath: m_Name
       value: Polar_Bear (1)
@@ -328,6 +332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1012961844}
     m_Modifications:
+    - target: {fileID: -9081483075065129693, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
+      propertyPath: wander
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1062773842467529188, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
       propertyPath: m_Name
       value: Polar_Bear (2)
@@ -437,6 +445,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1012961844}
     m_Modifications:
+    - target: {fileID: -9081483075065129693, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
+      propertyPath: wander
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1062773842467529188, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
       propertyPath: m_Name
       value: Polar_Bear (5)
@@ -681,6 +693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1012961844}
     m_Modifications:
+    - target: {fileID: -9081483075065129693, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
+      propertyPath: wander
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1062773842467529188, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
       propertyPath: m_Name
       value: Polar_Bear (3)
@@ -1431,6 +1447,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1012961844}
     m_Modifications:
+    - target: {fileID: -9081483075065129693, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
+      propertyPath: wander
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1062773842467529188, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
       propertyPath: m_Name
       value: Polar_Bear (4)
@@ -1780,6 +1800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1012961844}
     m_Modifications:
+    - target: {fileID: -9081483075065129693, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
+      propertyPath: wander
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1062773842467529188, guid: a3e76c07a7b8247549e77d3d297eb5d0, type: 3}
       propertyPath: m_Name
       value: Polar_Bear
