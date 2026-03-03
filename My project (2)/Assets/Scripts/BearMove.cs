@@ -6,7 +6,7 @@ using System.Collections;
 public class BearMove : MonoBehaviour
 {
     public bool move = true;
-    public char axis = 'x';
+    private char axis = 'x';
     private float amplitude = 1f; 
     private float frequency = 1f; 
 
