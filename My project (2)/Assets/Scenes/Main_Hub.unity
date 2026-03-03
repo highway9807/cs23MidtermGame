@@ -476,7 +476,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 85689077ff7d44bafacbc5308da7e7ba, type: 2}
   - {fileID: 11400000, guid: 88545d2146f06413593f0888b1ef46fd, type: 2}
   - {fileID: 11400000, guid: 6d07140ceb2bc4cea871244ae1ba7800, type: 2}
-  - {fileID: 0}
   addItemKey: 107
   removeItemKey: 108
 --- !u!4 &449263909
