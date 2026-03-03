@@ -179,3 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68ececd86afd4314ad738ea6ed599ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressBar: {fileID: 4439040982065541632, guid: 9a383946c235d4003a891e1de82b3375, type: 3}
+  miningTime: 2
