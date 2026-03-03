@@ -439,6 +439,54 @@ Transform:
   - {fileID: 1028179790}
   m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &449263907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 449263909}
+  - component: {fileID: 449263908}
+  m_Layer: 0
+  m_Name: Inventory Tester 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &449263908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449263907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4861d58509594446bad66dbf0422464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testItemA: {fileID: 11400000, guid: ae80b9d65df7b4ea7b777944c90fc1f0, type: 2}
+  testItemB: {fileID: 11400000, guid: 6d07140ceb2bc4cea871244ae1ba7800, type: 2}
+  addItemKey: 107
+  removeItemKey: 108
+--- !u!4 &449263909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449263907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 413.176, y: 252.98148, z: -1.2968769}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1458,7 @@ GameObject:
   - component: {fileID: 1117316834}
   - component: {fileID: 1117316833}
   m_Layer: 0
-  m_Name: Inventory Tester
+  m_Name: Inventory Tester 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3110,3 +3158,4 @@ SceneRoots:
   - {fileID: 940441846}
   - {fileID: 811402256}
   - {fileID: 1117316834}
+  - {fileID: 449263909}
