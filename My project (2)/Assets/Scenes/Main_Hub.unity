@@ -431,13 +431,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386781294}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8, y: 4.78, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.923716, y: 5.2022877, z: 0.09333008}
   m_LocalScale: {x: 2.5, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1028179790}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -943,13 +943,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582509413}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.68, y: 4.78, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.556284, y: 5.2022877, z: 0.09333008}
   m_LocalScale: {x: 2.5, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1504815825}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &582509417
 MonoBehaviour:
@@ -1175,18 +1175,56 @@ Transform:
   m_GameObject: {fileID: 701969242}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70873857, w: 0.70547134}
-  m_LocalPosition: {x: 8.49, y: 2.45, z: 0}
+  m_LocalPosition: {x: 7.6137156, y: 2.8722875, z: 0.09333008}
   m_LocalScale: {x: 2.5, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1606330921}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.265}
 --- !u!224 &718330264 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8695344479447871887, guid: 7369d16e70ae94d06b0257de4dc92af3, type: 3}
   m_PrefabInstance: {fileID: 5431392770037352031}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &811402255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811402256}
+  m_Layer: 0
+  m_Name: DOOR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &811402256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811402255}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8762843, y: -0.42228737, z: -0.09333008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1125399197}
+  - {fileID: 582509416}
+  - {fileID: 1359430971}
+  - {fileID: 1557057186}
+  - {fileID: 1609230999}
+  - {fileID: 386781297}
+  - {fileID: 701969245}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &940441844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,12 +1528,12 @@ Transform:
   m_GameObject: {fileID: 1125399194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70999146, w: 0.7042103}
-  m_LocalPosition: {x: -8.55, y: 2.39, z: 0}
-  m_LocalScale: {x: 2.5, y: 0.23, z: 1}
+  m_LocalPosition: {x: -9.426285, y: 2.8122876, z: 0.09333008}
+  m_LocalScale: {x: 2.4999998, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 122711614}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.468}
 --- !u!114 &1125399198
 MonoBehaviour:
@@ -1733,8 +1771,9 @@ GameObject:
   - component: {fileID: 1359430971}
   - component: {fileID: 1359430970}
   - component: {fileID: 1359430969}
+  - component: {fileID: 1359430972}
   m_Layer: 0
-  m_Name: Door_1 (1)
+  m_Name: IceMine_2_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1770,7 +1809,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1849,14 +1888,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359430968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.33, y: 4.78, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.206284, y: 5.2022877, z: 0.09333008}
   m_LocalScale: {x: 2.5, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1893691421}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1359430972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359430968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac34fe6aca12493fb184c8661399257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1371474743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2104,8 +2155,9 @@ GameObject:
   - component: {fileID: 1557057186}
   - component: {fileID: 1557057185}
   - component: {fileID: 1557057184}
+  - component: {fileID: 1557057187}
   m_Layer: 0
-  m_Name: Door_1
+  m_Name: IceMine_3_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2141,7 +2193,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2220,14 +2272,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557057183}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.78, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8762843, y: 5.2022877, z: 0.09333008}
   m_LocalScale: {x: 2.5, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 124294972}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557057187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557057183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79576d26f3414fc2972bd8474ac3635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1606330920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,8 +2390,9 @@ GameObject:
   - component: {fileID: 1609230999}
   - component: {fileID: 1609230998}
   - component: {fileID: 1609230997}
+  - component: {fileID: 1609231000}
   m_Layer: 0
-  m_Name: Door_1 (3)
+  m_Name: IceMine_4_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2363,7 +2428,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2442,14 +2507,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609230996}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 4.78, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.6237156, y: 5.2022877, z: 0.09333008}
   m_LocalScale: {x: 2.5, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1540310739}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811402256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1609231000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609230996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdc4c98de0ff4698bcb05acd89e71f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1637825864 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2517204809958763988, guid: df43754ddcd034237a4fe31673a42198, type: 3}
@@ -2978,16 +3055,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1557057186}
-  - {fileID: 1359430971}
-  - {fileID: 582509416}
-  - {fileID: 1609230999}
-  - {fileID: 386781297}
-  - {fileID: 1125399197}
-  - {fileID: 701969245}
   - {fileID: 1371474743}
   - {fileID: 546679979}
   - {fileID: 1299140526}
   - {fileID: 1296891765}
   - {fileID: 581522911}
   - {fileID: 940441846}
+  - {fileID: 811402256}

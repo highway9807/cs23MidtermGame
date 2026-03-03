@@ -44,6 +44,6 @@ public class BearWander : MonoBehaviour
         targetPosition = startPosition + new Vector2(randomPoint.x, randomPoint.y);
         
         radius = Random.Range(2f, 3f);
-        speed = Random.Range(2f, 3f); 
+        speed = Random.Range(2f, 4f); 
     }
 }
