@@ -1241,6 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInv: {fileID: 0}
+  icePrefab: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
 --- !u!4 &2093291792
 Transform:
   m_ObjectHideFlags: 0

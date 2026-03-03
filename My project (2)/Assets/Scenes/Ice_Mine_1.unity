@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7500580446406256306, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: miningTime
       value: 0.5
@@ -739,6 +743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7500580446406256306, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: miningTime
       value: 0.5
@@ -886,6 +894,10 @@ PrefabInstance:
     - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: m_Name
       value: Ice (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7500580446406256306, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: miningTime
@@ -1066,6 +1078,10 @@ PrefabInstance:
     - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: m_Name
       value: Ice (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7500580446406256306, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: miningTime
@@ -1294,6 +1310,10 @@ PrefabInstance:
     - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: m_Name
       value: Ice (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515219066682628915, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7500580446406256306, guid: 9ddd01bd57b734c2f9b6a7e93ae231d3, type: 3}
       propertyPath: miningTime

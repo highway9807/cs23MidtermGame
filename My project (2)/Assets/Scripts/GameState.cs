@@ -10,7 +10,9 @@ public class GameState : MonoBehaviour
     public static GameState gs;
     public PlayerInventory playerInv;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Tooltip("Ice prefab for respawning one ice when mined. Assign in Inspector.")]
+    [SerializeField] private GameObject icePrefab;
+
     private void Awake()
     {
         // ensure no game object duplicates
@@ -32,7 +34,13 @@ public class GameState : MonoBehaviour
         {
             playerInv = gameObject.AddComponent<PlayerInventory>();
         }
+    }
 
+    /// <summary>Spawns one ice at the given position. Used by MineIce when ice is mined.</summary>
+    public void SpawnIceAt(Vector3 position)
+    {
+        if (icePrefab != null)
+            Instantiate(icePrefab, position, Quaternion.identity);
     }
     // void Start()
     // {
