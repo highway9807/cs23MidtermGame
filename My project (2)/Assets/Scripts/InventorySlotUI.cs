@@ -24,9 +24,7 @@ public class InventorySlotUI : MonoBehaviour
         // Set quantity label if we have a quantityText reference.
         if (quantityText != null)
         {
-            // If quantity is 1, we usually hide the number so it looks cleaner.
-            if (quantity <= 1) quantityText.text = "";
-            else quantityText.text = quantity.ToString();
+            quantityText.text = quantity > 0 ? quantity.ToString() : "";
         }
     }
 }
